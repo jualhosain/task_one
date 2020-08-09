@@ -43,6 +43,9 @@ nav {
 
 .banner {
     width: 100%;
+    height: 46rem;
+    overflow: hidden;
+    object-fit: cover;
 }
 
 .banner img {
