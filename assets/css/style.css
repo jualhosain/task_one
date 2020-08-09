@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --menu: #EEEBEC;
+    --pri: #CB3362;
+    --sec: #C8C10D;
+    --proBG: #EAE7E8;
+    --thi: #7F6C6C;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+}
+
+nav {
+    background: var(--menu);
+}
+
+.menu_wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 14px;
+    color: var(--thi);
+}
+
+.menu a:nth-child(1) {
+    color: var(--pri);
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+section#newProduct {
+    background: var(--proBG);
+}
+
+.productWrapper {
+    line-height: 37px;
+    padding: 39px 0;
+}
+
+.productWrapper h3 {
+    color: var(--thi);
+}
+
+.productWrapper h2 {
+    color: var(--pri);
+}
+
+.productWrapper p {
+    color: var(--thi);
+}
+
+.productWrapper a {
+    color: var(--thi);
+}
+
+#icon{
+    background: var(--sec);
+}
+.boxWrapper{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.box {display: flex;flex-direction: column;align-items: center;}
+
+.box h3 {
+    padding: 13px 0;
+}
+
+.box i {
+    font-size: 43px;
+}
+
+footer {
+    background: var(--pri);
+    padding-bottom: 11rem;
+}
+
+.social_link {display: flex;justify-content: center;padding-top: 74px;transform: translateX(-15px);}
+
+.social_link i {
+    font-size: 31px;
+    margin-left: 34px;
+    color: white;
+}
+
+.creadit {
+    text-align: center;
+    padding-top: 19px;
+}
+
+
+.productWrapper {
+    position: relative;
+}
+
+.productWrapper::after {
+    content: '';
+    width: 310px;
+    height: 262px;
+    background: url('../../assets/img/yogurt.jpg');
+    /* background: #000; */
+    top: 0;
+    right: 0;
+    position: absolute;
+}
